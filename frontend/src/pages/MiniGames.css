@@ -1,0 +1,404 @@
+.mini-games-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mini-games-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mini-games-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.game-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.game-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.game-icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.game-card h3 {
+  margin: 16px 0 8px;
+  font-size: 1.4rem;
+}
+
+.game-card p {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.game-points {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.game-active {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.back-btn {
+  background: #f5f5f5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 24px;
+  font-size: 1rem;
+}
+
+.back-btn:hover {
+  background: #e0e0e0;
+}
+
+/* Mood Tracker */
+.mood-tracker {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mood-tracker h2 {
+  margin-bottom: 32px;
+  font-size: 2rem;
+}
+
+.mood-options {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.mood-option {
+  padding: 20px;
+  border: 3px solid #ddd;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.mood-option:hover {
+  transform: scale(1.05);
+}
+
+.mood-option.selected {
+  border-width: 4px;
+  background: #f5f5f5;
+}
+
+.mood-emoji {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.mood-label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.mood-note {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  margin-bottom: 24px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+.submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Breathing Exercise */
+.breathing-exercise {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.breathing-exercise h2 {
+  margin-bottom: 16px;
+  font-size: 2rem;
+}
+
+.instructions {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.start-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 16px 48px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.breathing-animation {
+  margin: 60px 0;
+}
+
+.breath-circle {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.breath-circle.inhale {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transform: scale(1.2);
+}
+
+.breath-circle.hold {
+  background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%);
+  transform: scale(1.2);
+}
+
+.breath-circle.exhale {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transform: scale(1);
+}
+
+.breath-text {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.cycle-count {
+  color: white;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Gratitude Journal */
+.gratitude-journal {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gratitude-journal h2 {
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 32px;
+}
+
+.gratitude-inputs {
+  margin-bottom: 32px;
+}
+
+.gratitude-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.gratitude-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #667eea;
+}
+
+.gratitude-input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.gratitude-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Quick Challenge */
+.quick-challenge {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quick-challenge h2 {
+  margin-bottom: 32px;
+  font-size: 2rem;
+}
+
+.challenge-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 48px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+.challenge-icon-big {
+  font-size: 80px;
+  margin-bottom: 24px;
+}
+
+.challenge-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.challenge-category {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.challenge-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.secondary-btn {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.secondary-btn:hover {
+  background: #667eea;
+  color: white;
+}
+
+/* Game Complete */
+.game-complete {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.success-icon {
+  font-size: 80px;
+  margin-bottom: 24px;
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.game-complete h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #4CAF50;
+}
+
+.game-complete p {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.tip {
+  color: #666;
+  font-style: italic;
+  max-width: 400px;
+  margin: 24px auto 0;
+}
+
+@media (max-width: 768px) {
+  .games-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .game-active {
+    padding: 20px;
+  }
+  
+  .mood-options {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .breath-circle {
+    width: 200px;
+    height: 200px;
+  }
+}
