@@ -104,17 +104,7 @@ student-wellbeing-app/
    npm install
    ```
 
-3. **Configure Environment Variables**
-   
-   Create a `.env` file in the `backend` directory:
-   ```env
-   PORT=5000
-   MONGODB_URI=mongodb+srv://ahmed:ahmed123@cluster0.j9rdkr7.mongodb.net/?appName=Cluster0
-   JWT_SECRET=your_jwt_secret_key_here
-   GEMINI_API_KEY=AIzaSyBTeu1xb7kHHNUskM4QCYnf9Iv4rPIZNWM
-   GEMINI_MODEL=gemini-2.5-flash
-   NODE_ENV=development
-   ```
+
 
 4. **Frontend Setup**
    ```bash
